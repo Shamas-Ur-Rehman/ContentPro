@@ -1,0 +1,307 @@
+/* General Styles */
+.bg-white {
+    background-color: white;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #10101D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a6ca6;
+    margin-left: 1rem; /* Reduced for closer alignment */
+    font-family: 'Raleway', sans-serif;
+}
+
+.white-text {
+    color: white;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem; /* Adjusted to bring links closer */
+    margin-right: 5rem; /* Reduced margin on the right */
+    list-style-type: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #4a6ca6;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 5rem;
+}
+
+.hero-text {
+    max-width: 35rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: black;
+}
+
+.highlight {
+    color: #4a6ca6;
+}
+
+.hero-description {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    color: black;
+    font-family: 'Leto', sans-serif;
+}
+
+.bullet {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.button-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.order-button {
+    background-color: #3E9CDC;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 3rem;
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+}
+
+.details-button {
+    border: 1px solid #6F6D7B;
+    background-color: white;
+    color: black;
+    padding: 0.75rem 3rem;
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+}
+
+/* Animation Styles */
+.animated-text {
+    display: none; /* Hide all by default */
+    opacity: 0;
+    transition: opacity 15s ease;
+}
+
+.animated-text.active {
+    display: inline; /* Show the active one */
+    opacity: 1; /* Fully visible */
+}
+
+.animated-text:hover {
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+ /* General Styles */
+ body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+  }
+
+  .bg-white {
+      background-color: white;
+  }
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+width: 15px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #4a6ca6; /* Scrollbar color */
+border-radius: 10px; /* Rounded edges */
+border: 2px solid #f1f1f1; /* Optional padding effect */
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0); /* Transparent padding effect */
+height: 10px; /* Affects the length of the scrollbar */
+min-height: 10px; /* Ensures the scrollbar stays the same height */
+margin-top: 30px; /* Space at the top */
+margin-bottom: 30px; /* Space at the bottom */
+}
+
+/* Firefox scrollbar */
+body {
+scrollbar-color: #4a6ca6 #f1f1f1; /* Thumb color and track color */
+scrollbar-width: thin; /* Makes the scrollbar thinner */
+}
+
+
+
+
+
+
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #10101D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    z-index: 10;
+  }
+
+  .site-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4a6ca6;
+      margin-left: 1rem; 
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 1.5rem; 
+      margin-right: 5rem;
+      list-style-type: none;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .nav-link {
+      color: white;
+      font-size: 0.875rem;
+      text-decoration: none;
+  }
+
+  /* Hero Section */
+  .hero-section {
+      position: relative;
+      background-image: url('hero.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%; /* Use 100% instead of 100vw */
+      height: 100vh;
+      padding-top: 60px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .hero-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 0 5rem;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .hero-title {
+      max-width: 35rem;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .animated-text {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .animated-text.active {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+
+  .hero-description {
+      margin-top: 1.5rem;
+      font-size: 1.125rem;
+      color: black;
+      font-family: 'Leto', sans-serif;
+  }
+
+  .bullet {
+      color: black;
+  }
+
+  .button-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .order-button {
+      background-color: #4a6ca6;
+      color: white;
+      border: 1px solid white;
+      padding: 0.5rem 3rem;
+      font-size: 1.125rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+  }
+
+  .details-button {
+      border: 1px solid #6F6D7B;
+      background-color: white;
+      color: black;
+      padding: 0.75rem 3rem;
+      font-size: 1.125rem;
+      border-radius: 0.25rem;
+  }
+
+  .blue-text {
+      color: #4a6ca6;
+  }
